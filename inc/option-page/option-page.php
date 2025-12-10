@@ -64,7 +64,7 @@ if (function_exists('acf_add_local_field_group')) {
 				'key' => 'field_header_cta_link',
 				'label' => 'CTA Button Link',
 				'name' => 'header_cta_link',
-				'type' => 'url',
+				'type' => 'link',
 				'instructions' => 'Enter the URL to link to (e.g., /register or full URL)',
 				'placeholder' => '/register',
 			),

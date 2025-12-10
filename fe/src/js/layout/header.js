@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		link.addEventListener('click', closeMenu);
 	});
 
+	const mobileCta = document.querySelector('.mobile-cta-button');
+	if (mobileCta) {
+		mobileCta.addEventListener('click', closeMenu);
+	}
+
 	// Header scroll
 	function handleScroll() {
 		if (window.scrollY > 150) {

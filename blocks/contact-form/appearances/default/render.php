@@ -1,4 +1,4 @@
-<div class="contact-form">
+<div class="contact-form" id="online-reservation">
     <div class="contact-form-container">
         <div class="contact-input">
             <h2>Reserve your spot!</h2>

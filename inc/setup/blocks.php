@@ -82,6 +82,7 @@ function mood_register_blocks() {
 		}
 	}
 }
+
 /**
  * Load ACF field groups from JSON files in blocks directory
  */

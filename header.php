@@ -38,11 +38,13 @@
 		</nav>
 		
 		<div class="site-logo">
-			<h3><?php bloginfo('name'); ?></h3>
+			<h3><?php echo $site_name ?: get_bloginfo('name'); ?></h3>
 		</div>
 		
 		<button class="header-button desktop-cta">
-			Online Reservation
+			<a href="<?php echo $header_cta_link ? esc_url($header_cta_link['url']) : '#'; ?>" <?php echo !empty($header_cta_link['target']) ? 'target="' . esc_attr($header_cta_link['target']) . '"' : ''; ?>>
+				<?php echo esc_html($header_cta_text ?: 'Online Reservation'); ?>
+			</a>
 		</button>
 	</div>
 </header>
@@ -56,7 +58,7 @@
 		</button>
 		<div class="offcanvas-content">
 			<div class="offcanvas-logo">
-				<h3><?php bloginfo('name'); ?></h3>
+				<h3><?php echo $site_name ?: get_bloginfo('name'); ?></h3>
 			</div>
 
 			<nav class="mobile-nav">
@@ -71,7 +73,9 @@
 				?>
 			</nav>
 			<button class="mobile-cta-button">
-				Online Reservation
+				<a href="<?php echo $header_cta_link ? esc_url($header_cta_link['url']) : '#'; ?>" <?php echo !empty($header_cta_link['target']) ? 'target="' . esc_attr($header_cta_link['target']) . '"' : ''; ?>>
+					<?php echo esc_html($header_cta_text ?: 'Online Reservation'); ?>
+				</a>
 			</button>
 		</div>
 	</div>

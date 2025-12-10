@@ -21,10 +21,7 @@ require_once get_template_directory() . '/inc/core/vite.php';
 function mood_load_inc_files() {
 	$inc_dirs = array(
 		'inc/setup',
-		'inc/hooks',
-		'inc/customizer',
-		'inc/utils',
-		'inc/register-post-types',
+		'inc/custom-post-type',
 		'inc/option-page',
 	);
 
@@ -49,5 +46,4 @@ mood_load_inc_files();
  * It checks if Vite dev server is running and loads appropriate file.
  */
 require_once get_template_directory() . '/inc/enqueue/enqueue.php';
-require_once get_template_directory() . '/inc/custom-post-type/product.php';
 
