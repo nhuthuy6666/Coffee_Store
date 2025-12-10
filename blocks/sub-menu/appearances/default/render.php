@@ -1,4 +1,4 @@
-<div class="sub-menu" id="store-menu">
+<div class="sub-menu">
     <div class="sub-container">
         <div class="sub-menu-items">
             <?php foreach( $data->sub_menu as $index => $item ): ?>

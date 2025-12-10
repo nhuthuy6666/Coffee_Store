@@ -4,10 +4,10 @@ let rotation = 0;            // image rotation
 
 window.addEventListener("scroll", () => {
     const current = window.pageYOffset;
-    const direction = current > lastScrollY ? 1 : -1; // down = left, up = right
+    const delta = current - lastScrollY; // down = left, up = right
 
-    position += direction * 3;     // marquee speed
-    rotation += direction * 2;     // image rotation
+    position += delta * 0.5;     // marquee speed
+    rotation += delta * 0.3;     // image rotation
 
     document.getElementById("marquee-content").style.transform =
         `translateX(${position}px)`;

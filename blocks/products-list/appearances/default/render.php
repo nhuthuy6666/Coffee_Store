@@ -1,4 +1,4 @@
-<div class="products-list">
+<div class="products-list" id="store-menu">
     <div class="products-list-container">
         <?php
         $categories = get_terms(array(
