@@ -3,7 +3,7 @@
 }
 
 .scroll-marquee-inner {
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center py-4 sm:py-6 md:py-10 lg:py-12;
 }
 
 .scroll-marquee-content {
