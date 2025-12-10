@@ -1,0 +1,51 @@
+{
+    "key": "group_custom_text_media",
+    "title": "Custom Text Media",
+    "fields": [
+        {
+            "key": "field_custom_text_media_header",
+            "label": "Custom Text Media Header",
+            "name": "custom_text_media_header",
+            "type": "text",
+            "required": 0,
+            "default_value": "Welcome to Mood Cafe"
+        },
+        {
+            "key": "field_custom_text_media_text",
+            "label": "Custom Text Media Text",
+            "name": "custom_text_media_text",
+            "type": "textarea",
+            "required": 0,
+            "default_value": "Nestled in the heart of London, Mood Cafe is more than just a coffee shop—it's a space designed for connection, comfort, and exceptional flavors. Our mission is to serve expertly crafted coffee made from ethically sourced beans, paired with a selection of fresh, handcrafted pastries. "
+        },
+        {
+            "key": "field_custom_text_media_image1",
+            "label": "Custom Text Media Image 1",
+            "name": "custom_text_media_image1",
+            "type": "image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_custom_text_media_image2",
+            "label": "Custom Text Media Image 2",
+            "name": "custom_text_media_image2",
+            "type": "image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/custom-text-media"
+            }
+        ]
+    ]
+}

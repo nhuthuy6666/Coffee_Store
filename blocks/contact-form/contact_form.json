@@ -1,0 +1,41 @@
+{
+    "key": "group_contact_form",
+    "title": "Contact Form",
+    "fields": [
+        {
+            "key": "field_contact_form_img",
+            "label": "Contact Form Image",
+            "name": "contact_form_img",
+            "type": "image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_contact_form_phone",
+            "label": "Contact Form Phone",
+            "name": "contact_form_phone",
+            "type": "text",
+            "required": 0,
+            "default_value": "+1 (555) 123-4567"
+        },
+        {
+            "key": "field_contact_form_email",
+            "label": "Contact Form Email",
+            "name": "contact_form_email",
+            "type": "text",
+            "required": 1,
+            "default_value": "contact@moodcafe.com"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/contact-form"
+            }
+        ]
+    ]
+}

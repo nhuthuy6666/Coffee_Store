@@ -1,0 +1,73 @@
+{
+    "key": "group_scroll_banner",
+    "title": "Scroll Banner",
+    "fields": [
+        {
+            "key": "field_scroll_banner_heading_step_one",
+            "label": "Scroll Banner Heading Step One",
+            "name": "scroll_banner_heading_step_one",
+            "type": "text",
+            "required": 0,
+            "default_value": "Sourcing the Finest Beans"
+        },
+        {
+            "key": "field_scroll_banner_text_step_one",
+            "label": "Scroll Banner Text Step One",
+            "name": "scroll_banner_text_step_one",
+            "type": "textarea",
+            "required": 0,
+            "default_value": "We carefully select premium coffee beans from ethical farms to ensure deep, rich flavors in every cup."
+        },
+        {
+            "key": "field_scroll_banner_heading_step_two",
+            "label": "Scroll Banner Heading Step Two",
+            "name": "scroll_banner_heading_step_two",
+            "type": "text",
+            "required": 0,
+            "default_value": "Careful Roasting & Brewing"
+        },
+        {
+            "key": "field_scroll_banner_text_step_two",
+            "label": "Scroll Banner Text Step Two",
+            "name": "scroll_banner_text_step_two",
+            "type": "textarea",
+            "required": 0,
+            "default_value": "Our beans are roasted in small batches and brewed using expert techniques to extract the best flavors and aromas."
+        },
+        {
+            "key": "field_scroll_banner_heading_step_three",
+            "label": "Scroll Banner Heading Step Three",
+            "name": "scroll_banner_heading_step_three",
+            "type": "text",
+            "required": 0,
+            "default_value": "Serving with Care & Love"
+        },
+        {
+            "key": "field_scroll_banner_text_step_three",
+            "label": "Scroll Banner Text Step Three",
+            "name": "scroll_banner_text_step_three",
+            "type": "textarea",
+            "required": 0,
+            "default_value": "Every cup is thoughtfully presented to provide an inviting and delightful experience for our guests."
+        },
+        {
+            "key": "field_banner_img",
+            "label": "Banner Image",
+            "name": "banner_img",
+            "type": "image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/scroll-banner"
+            }
+        ]
+    ]
+}

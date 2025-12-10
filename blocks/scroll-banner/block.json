@@ -1,0 +1,13 @@
+{
+    "name": "acf/scroll-banner",
+    "title": "Scroll Banner",
+    "description": "Scroll Banner block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["scroll", "banner"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}

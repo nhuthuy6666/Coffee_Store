@@ -1,0 +1,93 @@
+.site-footer {
+    @apply bg-[#704015] py-5 px-4 sm:px-8;
+
+    .container {
+        @apply flex flex-col xl:flex-row justify-between items-start xl:items-center max-w-7xl mx-auto py-10 md:py-16 lg:py-20 gap-8 xl:gap-12;
+    }
+}
+
+.footer-brand {
+    @apply flex flex-col justify-center items-start w-full lg:w-auto;
+
+    h2 {
+        @apply text-[#FFFFFF] mb-4 md:mb-6 lg:mb-8 text-2xl md:text-3xl lg:text-4xl;
+    }
+
+    .description-wrapper {
+        @apply w-full md:w-3/4 lg:w-1/2;
+
+        p {
+            @apply text-[#F7D2AD] mb-4 md:mb-6 lg:mb-8 text-sm md:text-base;
+        }
+    }
+}
+
+#footer-menu {
+    @apply flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 lg:gap-8;
+
+    a {
+        @apply text-[#FFFFFF] text-sm md:text-base;
+    }
+}
+
+.brand-club {
+    @apply flex flex-col justify-center items-start w-full lg:w-auto lg:max-w-md;
+
+    .club-title {
+        @apply text-lg md:text-xl font-bold text-[#FFFFFF] mb-4 md:mb-6;
+    }
+
+    .club-description-wrapper {
+        @apply w-full md:w-4/5 lg:w-2/3;
+
+        p {
+            @apply text-[#F7D2AD] mb-4 md:mb-6 text-sm md:text-base;
+        }
+    }
+
+    .club-input {
+        @apply placeholder-[#DEB68E] mb-2 w-full px-3 md:px-4 py-2 rounded-lg text-sm md:text-base;
+    }
+
+    .club-button {
+        @apply bg-[#F7D2AD] hover:bg-[#966133] hover:text-white w-full px-3 md:px-4 py-2 rounded-3xl text-sm md:text-base font-medium;
+    }
+}
+
+.marquee-wrapper {
+    @apply relative;
+
+    .marquee-overlay {
+        @apply absolute flex items-center justify-center inset-0 bg-gradient-to-t from-[#966133] to-[#704015] opacity-0 transition-all duration-500 pointer-events-none z-10;
+
+        .overlay-content {
+            @apply flex items-center gap-2 pointer-events-auto;
+
+            h1 {
+                @apply text-[#FFFFFF] text-2xl md:text-3xl lg:text-4xl;
+            }
+
+            .arrow-icon {
+                @apply w-6 h-6 md:w-8 md:h-8 -rotate-45;
+            }
+        }
+    }
+
+    .marquee {
+        @apply overflow-hidden py-6 md:py-8 lg:py-10;
+
+        .marquee-track {
+            @apply flex gap-4 md:gap-6 lg:gap-8 animate-marquee;
+
+            img {
+                @apply w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-xl md:rounded-2xl flex-shrink-0;
+            }
+        }
+    }
+}
+
+.marquee-wrapper:hover {
+    .marquee-overlay {
+        @apply opacity-70;
+    }
+}

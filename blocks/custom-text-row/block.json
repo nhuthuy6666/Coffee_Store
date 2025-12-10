@@ -1,0 +1,13 @@
+{
+    "name": "acf/custom-text-row",
+    "title": "Custom Text Row",
+    "description": "Custom Text Row block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["custom", "text", "row"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}

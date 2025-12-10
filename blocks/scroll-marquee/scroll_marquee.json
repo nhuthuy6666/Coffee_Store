@@ -1,0 +1,38 @@
+{
+    "key": "group_scroll_marquee",
+    "title": "Scroll Marquee",
+    "fields": [
+        {
+            "key": "field_marquee_images",
+            "label": "Marquee Images",
+            "name": "marquee_images",
+            "type": "repeater",
+            "required": 1,
+            "layout": "row",
+            "button_label": "Add Image",
+            "sub_fields": [
+                {
+                    "key": "field_marquee_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "required": 1,
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/scroll-marquee"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "active": true
+}

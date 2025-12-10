@@ -1,0 +1,13 @@
+{
+    "name": "acf/contact-form",
+    "title": "Contact Form",
+    "description": "Contact Form block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["contact", "form"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}

@@ -1,0 +1,10 @@
+body.page {
+    @apply bg-[#FFF7F0] font-sans;
+
+    .site-main {
+
+        .container {
+            @apply max-w-full mx-auto;
+        }
+    }
+}

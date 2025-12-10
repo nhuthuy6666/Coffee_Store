@@ -1,0 +1,15 @@
+.scroll-marquee {
+    @apply overflow-hidden;
+}
+
+.scroll-marquee-inner {
+    @apply flex justify-center items-center;
+}
+
+.scroll-marquee-content {
+    @apply flex gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-28 will-change-transform;
+}
+
+.img-item {
+    @apply w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 xl:w-[330px] xl:h-[330px] max-w-none object-contain will-change-transform;
+}

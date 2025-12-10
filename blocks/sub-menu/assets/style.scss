@@ -1,0 +1,15 @@
+.sub-menu {
+    @apply w-full py-4 px-4 sm:px-6 md:px-8 bg-[#FFEBD6] flex justify-center items-center rounded-b-2xl sm:rounded-b-3xl sticky top-16 z-[29];
+
+    .sub-container {
+        @apply max-w-7xl mx-auto;
+    }
+
+    .sub-menu-items {
+        @apply flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 justify-center items-center;
+
+        a {
+            @apply text-[#704015] hover:text-[#A17046] text-sm lg:text-base;
+        }
+    }
+}

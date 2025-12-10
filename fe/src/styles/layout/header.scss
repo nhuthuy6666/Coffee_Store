@@ -1,0 +1,107 @@
+// Style desktop
+.site-header {
+    @apply fixed bg-transparent top-0 left-0 right-0 z-30 py-3 px-4 sm:px-5 md:px-6 lg:px-8 transition-all duration-300;
+}
+
+.site-header.scrolled {
+    @apply bg-white shadow-md;
+}
+
+.site-header .container {
+    @apply flex flex-row justify-between items-center max-w-7xl mx-auto gap-3 sm:gap-4;
+}
+
+.site-logo {
+    @apply flex items-center absolute right-4 md:relative md:left-auto md:right-auto md:translate-x-0 md:justify-center;
+}
+
+.site-logo h3 {
+    @apply text-base sm:text-lg md:text-xl;
+}
+
+.header-button {
+    @apply px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2 rounded-3xl flex items-center justify-center text-xs sm:text-sm md:text-base whitespace-nowrap hover:bg-[#966133] hover:text-white;
+}
+
+#header-menu {
+    @apply flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3 md:gap-6 lg:gap-8 text-xs sm:text-sm lg:text-base;
+}
+
+#header-menu li {
+    @apply whitespace-nowrap;
+}
+
+.container>* {
+    @apply flex-shrink-0;
+}
+
+// Style mobile/tablet
+.menu-toggle {
+    @apply md:hidden p-2 text-white z-30 relative border-0 order-1;
+}
+
+.desktop-nav {
+    @apply hidden md:block;
+}
+
+.desktop-cta {
+    @apply hidden md:flex;
+}
+
+.offcanvas-menu {
+    @apply fixed inset-0 md:hidden invisible opacity-0 transition-all duration-300 z-40;
+}
+
+.offcanvas-menu.is-active {
+    @apply visible opacity-100;
+}
+
+.offcanvas-panel {
+    @apply fixed top-0 left-0 w-80 max-w-[85vw] h-full bg-[#FFEBD6] shadow-2xl transform -translate-x-full transition-transform duration-300 z-50;
+}
+
+.offcanvas-menu.is-active .offcanvas-panel {
+    @apply translate-x-0;
+}
+
+.offcanvas-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0;
+    z-index: 41;
+}
+
+// Display overlay when menu is active
+.offcanvas-menu.is-active .offcanvas-overlay {
+    @apply opacity-100;
+}
+
+.menu-close {
+    @apply absolute top-4 right-4 p-2 z-10 border-0;
+}
+
+.offcanvas-content {
+    @apply p-6 pt-16;
+}
+
+.offcanvas-logo {
+    @apply mb-8 text-center;
+}
+
+.mobile-nav {
+    @apply mb-8;
+}
+
+#mobile-menu {
+    @apply flex flex-col gap-0;
+}
+
+#mobile-menu li {
+    @apply border-b border-white last:border-0;
+}
+
+#mobile-menu a {
+    @apply block text-base py-3;
+}
+
+.mobile-cta-button {
+    @apply w-full px-5 py-3 rounded-3xl bg-[#7d4f29] hover:bg-[#966133] text-white text-center;
+}

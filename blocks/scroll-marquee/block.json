@@ -1,0 +1,16 @@
+{
+    "name": "acf/scroll-marquee",
+    "title": "Scroll Marquee",
+    "description": "Scroll Marquee block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": [
+        "scroll",
+        "marquee"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}

@@ -1,0 +1,47 @@
+{
+    "key": "group_banner",
+    "title": "Banner",
+    "fields": [
+        {
+            "key": "field_banner_heading",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "required": 0,
+            "default_value": "Moments Made Fresh"
+        },
+        {
+            "key": "field_banner_subheading",
+            "label": "Subheading",
+            "name": "subheading",
+            "type": "text",
+            "required": 0,
+            "default_value": "Discover freshly brewed coffee and handpicked flavors, crafted to brighten your day."
+        },
+        {
+            "key": "field_banner_button_text",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "required": 0,
+            "default_value": "Explore Menu"
+        },
+        {
+            "key": "field_banner_button_url",
+            "label": "Button URL",
+            "name": "button_url",
+            "type": "url",
+            "required": 0,
+            "default_value": "https://example.com"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/banner"
+            }
+        ]
+    ]
+}

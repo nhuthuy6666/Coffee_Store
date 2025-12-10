@@ -1,0 +1,41 @@
+{
+    "key": "group_sub_menu",
+    "title": "Sub Menu",
+    "fields": [
+        {
+            "key": "field_sub_menu",
+            "label": "Sub Menu",
+            "name": "sub_menu",
+            "type": "repeater",
+            "required": 1,
+            "layout": "row",
+            "button_label": "Add menu item",
+            "max": 3,
+            "sub_fields": [
+                {
+                    "key": "field_title_url",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_url",
+                    "label": "Url",
+                    "name": "url",
+                    "type": "url",
+                    "required": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/sub-menu"
+            }
+        ]
+    ]
+}

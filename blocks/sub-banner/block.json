@@ -1,0 +1,14 @@
+{
+    "name": "acf/sub-banner",
+    "title": "Sub Banner",
+    "description": "Sub Banner block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["sub-banner", "faq"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}
+

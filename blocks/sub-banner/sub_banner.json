@@ -1,0 +1,57 @@
+{
+    "key": "group__sub-banner",
+    "title": "Sub Banner",
+    "fields": [
+        {
+            "key": "field_sub_banner_heading",
+            "label": "Sub Banner Heading",
+            "name": "sub_banner_heading",
+            "type": "text",
+            "required": 0,
+            "default_value": "What Our Customers Love About Their Cafe Experience – Real Stories from Our Regulars"
+        },
+        {
+            "key": "field_sub_banner_excerpt",
+            "label": "Sub Banner Excerpt",
+            "name": "sub_banner_excerpt",
+            "type": "textarea",
+            "required": 0,
+            "default_value": "Coffee is a lot more than just a drink; it's something happening. Not as in hip, but like an event … It gives you time … a chance to be, like be yourself, and have a second cup."
+        },
+        {
+            "key": "field_sub_banner_author",
+            "label": "Sub Banner Author",
+            "name": "sub_banner_author",
+            "type": "text",
+            "required": 0,
+            "default_value": "Gertrude Stein"
+        },
+        {
+            "key": "field_sub_banner_img",
+            "label": "Sub Banner Image",
+            "name": "sub_banner_img",
+            "type": "image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_sub_banner_button_url",
+            "label": "Button URL",
+            "name": "sub_banner_button_url",
+            "type": "url",
+            "required": 0,
+            "default_value": "https://www.google.com/?hl=vi"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/sub-banner"
+            }
+        ]
+    ]
+}

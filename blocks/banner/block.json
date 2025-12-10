@@ -1,0 +1,14 @@
+{
+    "name": "acf/banner",
+    "title": "Banner",
+    "description": "Banner block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["banner", "faq"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}
+

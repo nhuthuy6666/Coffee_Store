@@ -1,0 +1,54 @@
+.scroll-banner {
+    @apply mt-20;
+
+    .scroll-banner-inner {
+        @apply flex flex-col lg:flex-row items-stretch w-full max-w-7xl mx-auto gap-6 lg:gap-10 px-4 lg:px-0;
+    }
+
+    .scroll-banner-img {
+        @apply w-full lg:w-1/2 relative min-w-0;
+
+        img {
+            @apply rounded-3xl w-full h-[40rem] sm:h-[50rem] lg:h-[60rem] object-cover;
+        }
+    }
+
+    .scroll-banner-steps {
+        @apply w-full lg:w-1/2 relative min-w-0;
+
+        .steps-container {
+            @apply relative flex flex-col justify-between h-[40rem] sm:h-[50rem] lg:h-[60rem] gap-6 lg:gap-0;
+        }
+
+        .card-step {
+            @apply p-6 sm:p-8 lg:p-10 rounded-3xl sticky;
+
+            .step-number {
+                @apply cursor-none w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full text-base sm:text-lg border border-dashed text-[#704015] flex-shrink-0;
+            }
+
+            h2 {
+                @apply mt-3 sm:mt-4 text-xl sm:text-2xl lg:text-3xl break-words;
+            }
+
+            p {
+                @apply mt-2 text-[#966133] text-sm sm:text-base break-words;
+            }
+
+            // Specifics for child 1
+            &:nth-child(1) {
+                @apply bg-[#FFF7F0] top-28 shadow-lg border-[2px] border-[#F7D2AD] z-[10];
+            }
+
+            // Specifics for child 2
+            &:nth-child(2) {
+                @apply bg-[#FFEBD6] top-32 shadow-xl z-[11];
+            }
+
+            // Specifics for child 3
+            &:nth-child(3) {
+                @apply bg-[#F7D2AD] top-36 shadow-xl z-[12];
+            }
+        }
+    }
+}

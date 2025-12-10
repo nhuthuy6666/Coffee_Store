@@ -1,0 +1,13 @@
+{
+    "name": "acf/custom-text-media",
+    "title": "Custom Text Media",
+    "description": "Custom Text Media block",
+    "category": "custom-blocks",
+    "icon": "editor-ul",
+    "keywords": ["custom", "text", "media"],
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "AcfBlockRenderCallback"
+    },
+    "align": "full"
+}
