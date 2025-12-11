@@ -12,7 +12,7 @@
 }
 
 .site-logo {
-    @apply flex items-center absolute right-4 md:relative md:left-auto md:right-auto md:translate-x-0 md:justify-center;
+    @apply flex items-center md:justify-center;
 }
 
 .site-logo h3 {
@@ -37,7 +37,7 @@
 
 // Style mobile/tablet
 .menu-toggle {
-    @apply md:hidden p-2 text-white z-30 relative border-0 order-1;
+    @apply md:hidden p-2 text-white z-30 relative border-0 order-2;
 }
 
 .desktop-nav {
@@ -57,7 +57,7 @@
 }
 
 .offcanvas-panel {
-    @apply fixed top-0 left-0 w-80 max-w-[85vw] h-full bg-[#FFEBD6] shadow-2xl transform -translate-x-full transition-transform duration-300 z-50;
+    @apply fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-[#FFEBD6] shadow-2xl transform translate-x-full transition-transform duration-300 z-50;
 }
 
 .offcanvas-menu.is-active .offcanvas-panel {
@@ -75,7 +75,7 @@
 }
 
 .menu-close {
-    @apply absolute top-4 right-4 p-2 z-10 border-0;
+    @apply absolute top-4 left-4 p-2 z-10 border-0;
 }
 
 .offcanvas-content {
