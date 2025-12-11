@@ -2,14 +2,14 @@
     @apply mt-20;
 
     .scroll-banner-inner {
-        @apply flex flex-col lg:flex-row items-stretch w-full max-w-7xl mx-auto gap-6 lg:gap-10 px-4 lg:px-0;
+        @apply flex flex-col lg:flex-row items-stretch w-full max-w-7xl mx-auto gap-6 lg:gap-10 px-4 md:px-8 2xl:px-0;
     }
 
     .scroll-banner-img {
         @apply w-full lg:w-1/2 relative min-w-0;
 
         img {
-            @apply rounded-3xl w-full h-[40rem] sm:h-[50rem] lg:h-[60rem] object-cover;
+            @apply rounded-3xl w-full h-[40rem] sm:h-[50rem] object-cover;
         }
     }
 
@@ -17,7 +17,7 @@
         @apply w-full lg:w-1/2 relative min-w-0;
 
         .steps-container {
-            @apply relative flex flex-col justify-between h-[40rem] sm:h-[50rem] lg:h-[60rem] gap-6 lg:gap-0;
+            @apply relative flex flex-col justify-between h-[40rem] sm:h-[50rem] gap-6 lg:gap-0;
         }
 
         .card-step {

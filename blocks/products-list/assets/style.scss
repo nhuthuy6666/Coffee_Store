@@ -1,5 +1,5 @@
 .products-list {
-    @apply py-16 px-4;
+    @apply py-16 px-4 md:px-8 2xl:px-0;
 
     &-container {
         @apply max-w-7xl mx-auto;

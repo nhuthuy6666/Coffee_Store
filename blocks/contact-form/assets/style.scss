@@ -1,67 +1,67 @@
 .contact-form {
-    @apply bg-[#FFEBD6] pb-10;
+    @apply bg-[#FFEBD6] pb-8 sm:pb-10 flex justify-center items-center;
+}
 
-    .contact-form-container {
-        @apply flex flex-col lg:flex-row justify-between items-stretch px-4 sm:px-6 md:px-10 py-10 sm:py-16 md:py-20 gap-6 sm:gap-8 lg:gap-10;
-    }
+.contact-form-container {
+    @apply max-w-7xl w-full flex flex-col lg:flex-row justify-between items-stretch px-4 sm:px-6 md:px-8 lg:px-8 2xl:px-0 py-8 sm:py-12 md:py-16 lg:py-20 gap-6 sm:gap-8 lg:gap-10;
+}
 
-    .contact-input {
-        @apply w-full lg:w-1/2;
+.contact-input {
+    @apply w-full lg:w-1/2;
+}
 
-        h2 {
-            @apply mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl;
-        }
+.contact-input h2 {
+    @apply mb-4 sm:mb-6 md:mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight;
+}
 
-        >p {
-            @apply w-full sm:w-3/4 lg:w-1/2 mb-6 sm:mb-8 text-sm sm:text-base;
-        }
-    }
+.contact-input>p {
+    @apply w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mb-6 sm:mb-8 text-sm sm:text-base text-[#704015] leading-relaxed;
+}
 
-    .form-row {
-        @apply flex flex-col sm:flex-row items-center gap-4 mb-4;
-    }
+.form-row {
+    @apply flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4 mb-3 sm:mb-4;
+}
 
-    .form-field {
-        @apply flex flex-col justify-center items-start w-full sm:w-1/2;
+.form-field {
+    @apply flex flex-col justify-center items-start w-full sm:w-1/2;
+}
 
-        p {
-            @apply mb-2 text-sm sm:text-base;
-        }
+.form-field p {
+    @apply mb-2 text-sm sm:text-base text-[#704015] font-medium;
+}
 
-        input {
-            @apply px-4 py-2 rounded-lg border-[1px] border-[#F7D2AD] w-full placeholder:text-[#E6C5A5] text-sm sm:text-base;
-        }
-    }
+.form-field input {
+    @apply px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg border-[1px] border-[#F7D2AD] w-full placeholder:text-[#E6C5A5] text-sm sm:text-base focus:outline-none focus:border-[#704015] transition-colors;
+}
 
-    .form-field-full {
-        @apply flex flex-col justify-center items-start w-full mb-4;
+.form-field-full {
+    @apply flex flex-col justify-center items-start w-full mb-3 sm:mb-4;
+}
 
-        p {
-            @apply mb-2 text-sm sm:text-base;
-        }
+.form-field-full p {
+    @apply mb-2 text-sm sm:text-base text-[#704015] font-medium;
+}
 
-        textarea {
-            @apply px-4 py-2 rounded-lg border-[1px] border-[#F7D2AD] w-full h-32 sm:h-40 placeholder:text-[#E6C5A5] text-sm sm:text-base;
-        }
-    }
+.form-field-full textarea {
+    @apply px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg border-[1px] border-[#F7D2AD] w-full h-28 sm:h-32 md:h-40 placeholder:text-[#E6C5A5] text-sm sm:text-base resize-none focus:outline-none focus:border-[#704015] transition-colors;
+}
 
-    .form-submit {
-        @apply flex flex-col justify-center items-center w-full px-4 py-3 rounded-3xl bg-[#704015] hover:bg-[#966133] text-white text-sm sm:text-base;
-    }
+.form-submit {
+    @apply flex justify-center items-center w-full px-4 py-2.5 sm:py-3 rounded-3xl bg-[#704015] hover:bg-[#966133] text-white text-sm sm:text-base font-medium transition-colors cursor-pointer;
+}
 
-    .contact-image-panel {
-        @apply flex flex-col sm:flex-row justify-between items-end gap-4 w-full lg:w-1/2 bg-cover bg-center rounded-3xl p-6 sm:p-8 min-h-[300px] sm:min-h-[400px];
-    }
+.contact-image-panel {
+    @apply flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-end sm:justify-between items-stretch sm:items-end gap-3 sm:gap-4 w-full lg:w-1/2 bg-cover bg-center rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-[500px];
+}
 
-    .contact-info-btn {
-        @apply flex flex-col justify-center items-center w-full sm:w-auto sm:flex-1 max-w-xs px-6 py-6 rounded-lg bg-white hover:bg-[#F7D2AD] border-none;
+.contact-info-btn {
+    @apply flex flex-col justify-center items-center w-full sm:w-auto sm:flex-1 px-5 sm:px-6 py-5 sm:py-6 rounded-lg bg-white hover:bg-[#F7D2AD] border-none transition-colors cursor-pointer;
+}
 
-        .contact-info-label {
-            @apply text-xs sm:text-sm;
-        }
+.contact-info-label {
+    @apply text-xs sm:text-sm text-[#966133] mb-1;
+}
 
-        .contact-info-value {
-            @apply font-bold text-sm sm:text-base break-all;
-        }
-    }
+.contact-info-value {
+    @apply font-bold text-sm sm:text-base md:text-lg text-[#704015] break-all text-center;
 }

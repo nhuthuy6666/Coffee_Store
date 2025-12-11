@@ -17,6 +17,12 @@
 			$header_cta_link = get_field('header_cta_link', 'option');
 		?>
 		
+		<!-- Logo mobile/tablet -->
+		<div class="site-logo md:hidden order-1">
+			<button class="button-logo"><h3><?php echo $site_name ?: get_bloginfo('name'); ?></h3></button>
+		</div>
+
+		<!-- Menu toggle button -->
 		<button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
 			<svg class="w-6 h-6" fill="none" stroke="#704015" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -37,8 +43,9 @@
 			</ul>
 		</nav>
 		
-		<div class="site-logo">
-			<h3><?php echo $site_name ?: get_bloginfo('name'); ?></h3>
+		<!-- Logo desktop -->
+		<div class="site-logo hidden md:flex">
+			<button class="button-logo"><h3><?php echo $site_name ?: get_bloginfo('name'); ?></h3></button>
 		</div>
 		
 		<button class="header-button desktop-cta">

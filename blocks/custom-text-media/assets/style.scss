@@ -1,8 +1,8 @@
 .custom-text-media {
-    @apply w-full mt-32 px-4;
+    @apply w-full mt-32 px-4 md:px-8 2xl:px-0;
 
     .container-inner {
-        @apply max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 lg:gap-8;
+        @apply max-w-7xl mx-auto flex flex-col lg:flex-row gap-5;
     }
 
     .content {
@@ -21,7 +21,7 @@
         }
 
         img:last-child {
-            @apply w-48 h-48 sm:w-64 sm:h-64 xl:w-[400px] xl:h-[400px] object-contain rounded-2xl flex-shrink-0;
+            @apply w-48 h-48 sm:w-64 sm:h-64 xl:w-[380px] xl:h-[380px] 2xl:w-[400px] 2xl:h-[400px] object-contain rounded-2xl flex-shrink-0;
         }
     }
 }

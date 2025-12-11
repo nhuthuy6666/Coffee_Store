@@ -11,8 +11,12 @@
     @apply flex flex-row justify-between items-center max-w-7xl mx-auto gap-3 sm:gap-4;
 }
 
+.button-logo {
+    @apply border-0 bg-transparent pt-2;
+}
+
 .site-logo {
-    @apply flex items-center md:justify-center;
+    @apply flex justify-center items-center;
 }
 
 .site-logo h3 {
